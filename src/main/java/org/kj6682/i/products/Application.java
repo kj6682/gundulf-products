@@ -31,7 +31,6 @@ public class Application {
 
 		File jsonFile = ResourceUtils.getFile("classpath:products.json");
 
-
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonArray = new String(Files.readAllBytes(jsonFile.toPath()));
 
