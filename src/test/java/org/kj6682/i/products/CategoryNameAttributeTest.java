@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
  * };
  */
 public class CategoryNameAttributeTest {
-    Function<Object[], Application.CategoryName> toCategoryName = new Function<Object[], Application.CategoryName>() {
-        public Application.CategoryName apply(Object[] t) {
-            return new Application.CategoryName(t[0].toString(), t[1].toString());
+    Function<Object[], ProductAttributes.CategoryName> toCategoryName = new Function<Object[], ProductAttributes.CategoryName>() {
+        public ProductAttributes.CategoryName apply(Object[] t) {
+            return new ProductAttributes.CategoryName(t[0].toString(), t[1].toString());
         }
     };
 
@@ -27,7 +27,7 @@ public class CategoryNameAttributeTest {
 
         Object[] o = {"blue","Baba"};
 
-        Application.CategoryName n = toCategoryName.apply(o);
+        ProductAttributes.CategoryName n = toCategoryName.apply(o);
         Assert.assertEquals(o[0].toString(), n.getCategory());
         Assert.assertEquals(o[1].toString(), n.getName());
 
@@ -45,9 +45,9 @@ public class CategoryNameAttributeTest {
         objects.add(o2);
         objects.add(o3);
 
-        List<Application.CategoryName> names = objects.stream()
+        List<ProductAttributes.CategoryName> names = objects.stream()
                 .map(toCategoryName)
-                .collect(Collectors.<Application.CategoryName>toList());
+                .collect(Collectors.<ProductAttributes.CategoryName>toList());
 
         for (int i = 0 ; i < names.size(); i++) {
             Assert.assertEquals(objects.get(i)[1].toString(), names.get(i).getName());
