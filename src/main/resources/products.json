@@ -320,7 +320,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 praliné",
+    "name": ".1000 praliné",
     "category": "blue",
     "pieces": 1,
     "producer": "Four",
@@ -328,7 +328,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 praliné",
+    "name": ".1000 praliné",
     "category": "blue",
     "pieces": 4,
     "producer": "Four",
@@ -336,7 +336,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 praliné",
+    "name": ".1000 praliné",
     "category": "blue",
     "pieces": 6,
     "producer": "Four",
@@ -344,7 +344,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 praliné",
+    "name": ".1000 praliné",
     "category": "blue",
     "pieces": 8,
     "producer": "Four",
@@ -352,7 +352,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 vanille",
+    "name": ".1000 vanille",
     "category": "blue",
     "pieces": 1,
     "producer": "Four",
@@ -360,7 +360,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 vanille",
+    "name": ".1000 vanille",
     "category": "blue",
     "pieces": 4,
     "producer": "Four",
@@ -368,7 +368,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 vanille",
+    "name": ".1000 vanille",
     "category": "blue",
     "pieces": 6,
     "producer": "Four",
@@ -376,7 +376,7 @@
     "status": "VALID"
   },
   {
-    "name": "1000 vanille",
+    "name": ".1000 vanille",
     "category": "blue",
     "pieces": 8,
     "producer": "Four",
