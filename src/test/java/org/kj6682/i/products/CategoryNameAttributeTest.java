@@ -2,7 +2,6 @@ package org.kj6682.i.products;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.kj6682.i.products.attributes.CategoryName;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,9 +16,9 @@ import java.util.stream.Collectors;
  * };
  */
 public class CategoryNameAttributeTest {
-    Function<Object[], CategoryName> toCategoryName = new Function<Object[], CategoryName>() {
-        public CategoryName apply(Object[] t) {
-            return new CategoryName(t[0].toString(), t[1].toString());
+    Function<Object[], Application.CategoryName> toCategoryName = new Function<Object[], Application.CategoryName>() {
+        public Application.CategoryName apply(Object[] t) {
+            return new Application.CategoryName(t[0].toString(), t[1].toString());
         }
     };
 
@@ -28,7 +27,7 @@ public class CategoryNameAttributeTest {
 
         Object[] o = {"blue","Baba"};
 
-        CategoryName n = toCategoryName.apply(o);
+        Application.CategoryName n = toCategoryName.apply(o);
         Assert.assertEquals(o[0].toString(), n.getCategory());
         Assert.assertEquals(o[1].toString(), n.getName());
 
@@ -46,9 +45,9 @@ public class CategoryNameAttributeTest {
         objects.add(o2);
         objects.add(o3);
 
-        List<CategoryName> names = objects.stream()
+        List<Application.CategoryName> names = objects.stream()
                 .map(toCategoryName)
-                .collect(Collectors.<CategoryName>toList());
+                .collect(Collectors.<Application.CategoryName>toList());
 
         for (int i = 0 ; i < names.size(); i++) {
             Assert.assertEquals(objects.get(i)[1].toString(), names.get(i).getName());
