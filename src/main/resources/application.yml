@@ -13,6 +13,13 @@ spring:
 #      it does nothing more that loading the database with a specific bean in the Application
 spring:
   profiles: h2
+server:
+  port: 9000
+cors:
+  pattern: "/api/**"
+  origin: "http://localhost:8080"
+  methods: "*"
+  headers: "*"
 ---
 # prostgresql : profile to be used in dev only
 #               it needs a running local instance of the database
@@ -24,6 +31,11 @@ spring:
       username: jlg
       password: peakyblinders
       platform: POSTGRESQL
+cors:
+  pattern: "/api/**"
+  origin: "http://localhost:8080"
+  methods: "*"
+  headers: "*"
 ---
 # ddl-create : profile to be used in dev only
 #              to create the database by scratch
@@ -50,3 +62,8 @@ spring:
       url: ${JDBC_DATABASE_URL}
       username: ${JDBC_DATABASE_USERNAME}
       password: ${JDBC_DATABASE_PASSWORD}
+cors:
+  pattern: ${CORS_BASE_PATTERN}
+  origin:  ${ALLOWED_ORIGIN}
+  methods: ${ALLOWED_HEADERS}
+  headers: ${ALLOWED_METHODS}
