@@ -82,6 +82,8 @@ public class Application {
 
         @Override
         public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+            System.out.println(CORS_BASE_PATTERN);
+            System.out.println(ALLOWED_ORIGINS);
             config.getCorsRegistry()
                     .addMapping(CORS_BASE_PATTERN)
                     .allowedOrigins(ALLOWED_ORIGINS)
