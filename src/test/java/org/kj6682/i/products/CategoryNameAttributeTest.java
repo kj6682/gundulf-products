@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
  * };
  */
 public class CategoryNameAttributeTest {
-    Function<Object[], ProductAttributes.CategoryName> toCategoryName = new Function<Object[], ProductAttributes.CategoryName>() {
-        public ProductAttributes.CategoryName apply(Object[] t) {
-            return new ProductAttributes.CategoryName(t[0].toString(), t[1].toString());
+    Function<Object[], QueryAttributes.CategoryName> toCategoryName = new Function<Object[], QueryAttributes.CategoryName>() {
+        public QueryAttributes.CategoryName apply(Object[] t) {
+            return new QueryAttributes.CategoryName(t[0].toString(), t[1].toString());
         }
     };
 
@@ -27,7 +27,7 @@ public class CategoryNameAttributeTest {
 
         Object[] o = {"blue","Baba"};
 
-        ProductAttributes.CategoryName n = toCategoryName.apply(o);
+        QueryAttributes.CategoryName n = toCategoryName.apply(o);
         Assert.assertEquals(o[0].toString(), n.getCategory());
         Assert.assertEquals(o[1].toString(), n.getName());
 
@@ -45,9 +45,9 @@ public class CategoryNameAttributeTest {
         objects.add(o2);
         objects.add(o3);
 
-        List<ProductAttributes.CategoryName> names = objects.stream()
+        List<QueryAttributes.CategoryName> names = objects.stream()
                 .map(toCategoryName)
-                .collect(Collectors.<ProductAttributes.CategoryName>toList());
+                .collect(Collectors.<QueryAttributes.CategoryName>toList());
 
         for (int i = 0 ; i < names.size(); i++) {
             Assert.assertEquals(objects.get(i)[1].toString(), names.get(i).getName());

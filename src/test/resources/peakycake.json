@@ -1,0 +1,8 @@
+{
+  "name" : "product",
+  "pieces": 1,
+  "category": "category",
+  "producer": "producer",
+  "created" : "2017-07-13",
+  "status": "RUNNING"
+}

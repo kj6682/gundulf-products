@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface ProductAttributesRepository extends JpaRepository<Product, Long> {
+public interface QueryAttributesRepository extends JpaRepository<Product, Long> {
 
     @Query("select DISTINCT p.name from Product p")
     List<Object> listNames();
