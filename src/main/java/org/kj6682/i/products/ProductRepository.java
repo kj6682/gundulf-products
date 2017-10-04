@@ -1,6 +1,8 @@
 package org.kj6682.i.products;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.Repository;
@@ -21,6 +23,8 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
     List<Product> findByProducer(@Param("producer") String producer);
 
     List<Product> findAll();
+
+    Page<Product> findAll(Pageable pageable);
 
     void delete(Long id);
 
