@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
  * };
  */
 public class NameAttributeTest {
-    Function<Object, QueryAttributes.Name> toName = new Function<Object, QueryAttributes.Name>() {
-        public QueryAttributes.Name apply(Object t) {
-            return new QueryAttributes.Name(t.toString());
+    Function<Object, ListController.QueryAttributes.Name> toName = new Function<Object, ListController.QueryAttributes.Name>() {
+        public ListController.QueryAttributes.Name apply(Object t) {
+            return new ListController.QueryAttributes.Name(t.toString());
         }
     };
 
@@ -27,7 +27,7 @@ public class NameAttributeTest {
 
         Object o = "Baba";
 
-        QueryAttributes.Name n = toName.apply(o);
+        ListController.QueryAttributes.Name n = toName.apply(o);
         Assert.assertEquals(o.toString(), n.getName());
 
     }
@@ -44,9 +44,9 @@ public class NameAttributeTest {
         objects.add(o2);
         objects.add(o3);
 
-        List<QueryAttributes.Name> names = objects.stream()
+        List<ListController.QueryAttributes.Name> names = objects.stream()
                 .map(toName)
-                .collect(Collectors.<QueryAttributes.Name>toList());
+                .collect(Collectors.<ListController.QueryAttributes.Name>toList());
 
         for (int i = 0 ; i < names.size(); i++) {
             Assert.assertEquals(objects.get(i).toString(), names.get(i).getName());

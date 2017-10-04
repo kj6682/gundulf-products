@@ -1,6 +1,7 @@
 package org.kj6682.i.products;
 
 import io.swagger.annotations.Api;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,7 +35,7 @@ class ListController {
     };
 
     @Autowired
-    private QueryAttributesRepository repository;
+    private ProductRepository repository;
 
     @GetMapping("/names")
     public List<QueryAttributes.Name> names() {
@@ -73,5 +74,41 @@ class ListController {
 
         return categories;
 
+    }
+
+    static class QueryAttributes {
+        @Data
+        static class Category {
+
+            Category(String name) {
+                this.name = name;
+            }
+
+            private String name;
+
+        }
+
+        @Data
+        static class CategoryName {
+
+            private String category;
+            private String name;
+
+            public CategoryName(String category, String name) {
+                this.category = category;
+                this.name = name;
+            }
+        }
+
+        @Data
+        static class Name {
+
+            public Name(String name) {
+                this.name = name;
+            }
+
+            private String name;
+
+        }
     }
 }

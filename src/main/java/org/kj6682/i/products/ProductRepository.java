@@ -3,6 +3,7 @@ package org.kj6682.i.products;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.Repository;
@@ -27,5 +28,14 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
     Page<Product> findAll(Pageable pageable);
 
     void delete(Long id);
+
+    @Query("select DISTINCT p.name from Product p")
+    List<Object> listNames();
+
+    @Query("select DISTINCT p.category from Product p")
+    List<Object> listCategories();
+
+    @Query("select DISTINCT p.category, p.name from Product p")
+    List<Object[]> listCategoriesAndNames();
 
 }
