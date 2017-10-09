@@ -26,13 +26,18 @@ class Controller {
     @GetMapping("/products")
     List<Product> list(@RequestParam(value = "page", defaultValue = "0") int page, @RequestParam(value = "size", defaultValue = "0") int size) {
         if (page == 0 && size == 0) {
-            return repository.findAll();
+            return repository.findAllByOrderByName();
         }
 
         List<Product> list = new ArrayList<>();
         repository.findAll(new PageRequest(page, size)).iterator().forEachRemaining(list::add);
         return list;
 
+    }
+
+    @GetMapping("/products/search")
+    List<Product> search(@RequestParam(value = "name", defaultValue = "") String name) {
+        return repository.findByNameContainingIgnoreCaseOrderByName(name);
     }
 
     @PostMapping(value = "/products")
