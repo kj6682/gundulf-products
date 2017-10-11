@@ -24,7 +24,8 @@ public class SimpleCorsFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) res;
 
 //        response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
-        response.setHeader("Access-Control-Allow-Origin", "https://i-producer.herokuapp.com/");
+        log.info(request.getHeader("Origin"));
+        response.setHeader("Access-Control-Allow-Origin", "https://i-producer.herokuapp.com");
 
         response.setHeader("Access-Control-Allow-Credentials", "true");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
