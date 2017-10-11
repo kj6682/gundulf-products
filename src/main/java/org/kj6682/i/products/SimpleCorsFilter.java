@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/*
+
 @Component
 public class SimpleCorsFilter implements Filter {
 
@@ -41,4 +41,4 @@ public class SimpleCorsFilter implements Filter {
     public void destroy() {
     }
 
-}*/
+}
