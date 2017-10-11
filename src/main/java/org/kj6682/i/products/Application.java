@@ -67,6 +67,8 @@ public class Application {
     @Value("${cors.methods}")
     private String ALLOWED_METHODS;
 
+
+
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurerAdapter() {
@@ -76,6 +78,5 @@ public class Application {
             }
         };
     }
-
 
 }
