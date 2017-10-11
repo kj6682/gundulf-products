@@ -72,7 +72,7 @@ public class Application {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping(CORS_BASE_PATTERN).allowedOrigins(ALLOWED_ORIGINS).allowedMethods(ALLOWED_METHODS).allowedHeaders(ALLOWED_HEADERS);
+                registry.addMapping(CORS_BASE_PATTERN).allowedOrigins("https://i-producer.herokuapp.com").allowedMethods(ALLOWED_METHODS).allowedHeaders(ALLOWED_HEADERS);
             }
         };
     }
