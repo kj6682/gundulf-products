@@ -16,9 +16,6 @@ public class SimpleCorsFilter implements Filter {
 
     private final Logger log = LoggerFactory.getLogger(SimpleCorsFilter.class);
 
-    public SimpleCORSFilter() {
-        log.info("SimpleCORSFilter init");
-    }
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
