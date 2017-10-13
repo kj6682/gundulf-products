@@ -55,6 +55,28 @@ public class Application {
 
     }
 
+    @Profile({"ddl-create", "h2"})
+    @Bean
+    CommandLineRunner initItems(ItemRepository itemRepository) throws IOException {
+        org.springframework.core.io.Resource resource = new ClassPathResource("items.json");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(resource.getInputStream()));
+        final String jsonArray = reader.lines().collect(Collectors.joining());
+        ObjectMapper mapper = new ObjectMapper();
+
+        Item[] asArray = mapper.readValue(jsonArray, Item[].class);
+
+        return (evt) -> {
+            Arrays.asList(asArray).forEach(
+                    cake -> {
+                        itemRepository.save(cake);
+                        System.out.println(cake);
+                    }
+            );
+
+        };
+
+    }
+
     @Value("${cors.pattern}")
     private String CORS_BASE_PATTERN;
 
@@ -74,7 +96,7 @@ public class Application {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping(CORS_BASE_PATTERN).allowedOrigins("https://i-producer.herokuapp.com").allowedMethods(ALLOWED_METHODS).allowedHeaders(ALLOWED_HEADERS);
+                registry.addMapping(CORS_BASE_PATTERN).allowedOrigins(ALLOWED_ORIGINS).allowedMethods(ALLOWED_METHODS).allowedHeaders(ALLOWED_HEADERS);
             }
         };
     }
