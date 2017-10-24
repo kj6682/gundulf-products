@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * Created by luigi on 30/07/2017.
  */
-@Api(value = "products", description = "Products API")
+@Api(value = "items", description = "Items API")
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api")
 class ItemController {
 
     @Autowired
