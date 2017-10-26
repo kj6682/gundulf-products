@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.kj6682</groupId>
-	<artifactId>i.products</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>gundulf.products</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>i.product</name>
-	<description>products</description>
+	<name>gundulf.products</name>
+	<description>service to deal with products</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

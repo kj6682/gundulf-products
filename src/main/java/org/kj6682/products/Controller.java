@@ -1,8 +1,7 @@
-package org.kj6682.i.products;
+package org.kj6682.products;
 
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,7 +41,6 @@ class Controller {
 
     @PostMapping(value = "/products")
     ResponseEntity<?> create(@RequestBody Product product) {
-
         Assert.notNull(product, "Product can not be empty");
 
         Product result = repository.save(product);

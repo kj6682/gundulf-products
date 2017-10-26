@@ -1,4 +1,4 @@
-package org.kj6682.i.products;
+package org.kj6682.products;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +12,6 @@ import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.nio.file.Files;
-import java.time.LocalDate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

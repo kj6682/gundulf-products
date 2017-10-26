@@ -1,4 +1,4 @@
-package org.kj6682.i.products;
+package org.kj6682.products;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

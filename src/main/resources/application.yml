@@ -1,6 +1,7 @@
+debug: false
 spring:
   application:
-    name: u-product
+    name: gundulf-products
   jackson:
     serializazion:
       WRITE_DATES_AS_TIMESTAMPS : false

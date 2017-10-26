@@ -1,4 +1,4 @@
-package org.kj6682.i.products;
+package org.kj6682.products;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;

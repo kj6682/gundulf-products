@@ -3,7 +3,8 @@
 export PORT="-Dserver.port=8080"
 export SPRING_PROFILE="-Dspring.profiles.active=postgresql, ddl-validate"
 export DATABASE_URL="-Dspring.datasource.url=jdbc:postgresql://localhost:5432/cake"
+export VERSION="0.0.1"
 
 mvn clean install -P postgresql
-java $PORT $JAVA_OPTS $SPRING_PROFILE $DATABASE_URL -jar i.products-0.0.1-SNAPSHOT.jar
+java $PORT $JAVA_OPTS $SPRING_PROFILE $DATABASE_URL -jar target/gundulf.products-$VERSION.jar
 

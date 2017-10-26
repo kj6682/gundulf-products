@@ -1,4 +1,4 @@
-package org.kj6682.i.products;
+package org.kj6682.products;
 
 import lombok.Data;
 
