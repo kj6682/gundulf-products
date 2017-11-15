@@ -4,18 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.kj6682</groupId>
-	<artifactId>i.products</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>gundulf.products</artifactId>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 
-	<name>i.product</name>
-	<description>products</description>
+	<name>gundulf.products</name>
+	<description>service to deal with products</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from productRepository -->
 	</parent>
 
 	<properties>
@@ -77,7 +77,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.2.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
