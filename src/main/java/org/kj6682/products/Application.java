@@ -76,29 +76,5 @@ public class Application {
         };
 
     }
-
-    @Value("${cors.pattern}")
-    private String CORS_BASE_PATTERN;
-
-    @Value("${cors.origin}")
-    private String ALLOWED_ORIGINS;
-
-    @Value("${cors.headers}")
-    private String ALLOWED_HEADERS;
-
-    @Value("${cors.methods}")
-    private String ALLOWED_METHODS;
-
-
-
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping(CORS_BASE_PATTERN).allowedOrigins(ALLOWED_ORIGINS).allowedMethods(ALLOWED_METHODS).allowedHeaders(ALLOWED_HEADERS);
-            }
-        };
-    }
-
+    
 }
