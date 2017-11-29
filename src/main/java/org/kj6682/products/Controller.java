@@ -62,7 +62,7 @@ class Controller {
     @GetMapping("/products/{producer}")
     List<Product> listByProducer(@PathVariable String producer, @RequestParam(value = "page", defaultValue = "0") int page, @RequestParam(value = "size", defaultValue = "0") int size) {
         if (page == 0 && size == 0) {
-            return repository.findByProducer(producer);
+            return repository.findByProducerOrderByName(producer);
         }
 
         List<Product> list = new ArrayList<>();

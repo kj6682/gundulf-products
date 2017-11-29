@@ -16,7 +16,7 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
 
     List<Product> findByCategory(@Param("category") String category);
 
-    List<Product> findByProducer(@Param("producer") String producer);
+    List<Product> findByProducerOrderByName(@Param("producer") String producer);
 
     List<Product> findByProducer(@Param("producer") String producer, Pageable pageable);
 
