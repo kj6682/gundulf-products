@@ -18,6 +18,7 @@ import java.time.LocalDate;
 @Entity
 class Product {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -29,7 +30,6 @@ class Product {
     private short pieces;
 
     private String producer;
-
 
     @JsonSerialize(using = LocalDateSerializer.class)
     @JsonDeserialize(using = LocalDateDeserializer.class)

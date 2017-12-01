@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by luigi on 30/07/2017.
@@ -66,8 +67,17 @@ class Controller {
         }
 
         List<Product> list = new ArrayList<>();
-        repository.findByProducer(producer, new PageRequest(page, size)).iterator().forEachRemaining(list::add);
+        repository.findByProducerOrderByName(producer, new PageRequest(page, size)).iterator().forEachRemaining(list::add);
         return list;
 
+    }
+
+    @GetMapping("/products/search/{producer}")
+    List<Product> search(@PathVariable String producer,
+                         @RequestParam( value = "name", defaultValue = "") String name) {
+        return repository.findByNameContainingIgnoreCaseOrderByName(name)
+                .stream()
+                .filter(product -> product.getProducer().equals(producer))
+                .collect(Collectors.toList());
     }
 }

@@ -10,15 +10,10 @@ import java.util.List;
 
 public interface ProductRepository extends PagingAndSortingRepository<Product, Long> {
 
-    List<Product> findByNameContainingIgnoreCaseOrderByName(@Param("name") String name);
-
-    List<Product> findByNameStartsWith(@Param("name") String name);
-
-    List<Product> findByCategory(@Param("category") String category);
-
     List<Product> findByProducerOrderByName(@Param("producer") String producer);
+    List<Product> findByProducerOrderByName(@Param("producer") String producer, Pageable pageable);
 
-    List<Product> findByProducer(@Param("producer") String producer, Pageable pageable);
+    List<Product> findByNameContainingIgnoreCaseOrderByName(@Param("name") String name);
 
     List<Product> findAllByOrderByName();
 
