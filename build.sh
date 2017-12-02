@@ -5,7 +5,6 @@
 export VERSION="1.1.0"
 set -e
 set -o pipefail
-
 COUNTER_FILE="count.tmp"
 BUILD=`cat $COUNTER_FILE`
 ((BUILD++))
