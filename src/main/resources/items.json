@@ -1,82 +1,82 @@
 [
   {
-    "name": "Tiramisu",
+    "name": "tiramisu",
     "category": "purple",
-    "producer": "Cake"
+    "producer": "tartes"
   },
   {
-    "name": "Moelleux praliné",
+    "name": "moelleux praliné",
     "category": "purple",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Moelleux framboise",
+    "name": "moelleux framboise",
     "category": "purple",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Moelleux choco",
+    "name": "moelleux choco",
     "category": "purple",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Cake chocolat",
+    "name": "cake chocolat",
     "category": "purple",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Kouign aman",
+    "name": "kouign aman",
     "category": "orange",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Pavé",
+    "name": "pavé",
     "category": "orange",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Baba",
+    "name": "baba",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Saint Honoré",
+    "name": "saint honoré",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Eclair caramel",
+    "name": "eclair caramel",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Eclair chocolat",
+    "name": "eclair chocolat",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": ".1000 praliné",
+    "name": "millefeuilles praliné",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": ".1000 vanille",
+    "name": "millefeuilles vanille",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Gourmandise",
+    "name": "gourmandise",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Miss Clara",
+    "name": "miss clara",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   },
   {
-    "name": "Paris Plougastel",
+    "name": "paris plougastel",
     "category": "blue",
-    "producer": "Four"
+    "producer": "four"
   }
 ]
