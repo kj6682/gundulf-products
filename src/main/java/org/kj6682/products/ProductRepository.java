@@ -15,7 +15,6 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
 
     List<Product> findByNameContainingIgnoreCaseOrderByName(@Param("name") String name);
 
-    List<Product> findAllByOrderByName();
 
     Page<Product> findAll(Pageable pageable);
 
