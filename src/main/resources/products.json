@@ -1,490 +1,424 @@
 [
   {
-    "name": "tiramisu",
-    "category": "purple",
-    "pieces": 1,
-    "producer": "cake",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
     "name": "moelleux praliné",
-    "category": "purple",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux framboise",
-    "category": "purple",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux choco",
-    "category": "purple",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "cake chocolat",
-    "category": "purple",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "kouign aman",
-    "category": "orange",
-    "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "pavé",
-    "category": "orange",
-    "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "baba",
-    "category": "blue",
-    "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "baba",
-    "category": "blue",
-    "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "baba",
-    "category": "blue",
-    "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "baba",
-    "category": "blue",
-    "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux praliné",
-    "category": "purple",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux framboise",
-    "category": "purple",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux choco",
-    "category": "purple",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "cake chocolat",
-    "category": "purple",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "kouign aman",
-    "category": "orange",
-    "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "pavé",
-    "category": "orange",
-    "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux praliné",
-    "category": "purple",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux framboise",
-    "category": "purple",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux choco",
-    "category": "purple",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "cake chocolat",
-    "category": "purple",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "kouign aman",
-    "category": "orange",
-    "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
-  },
-  {
-    "name": "pavé",
-    "category": "orange",
-    "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux praliné",
-    "category": "purple",
     "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux framboise",
-    "category": "purple",
     "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "moelleux choco",
-    "category": "purple",
     "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "cake chocolat",
-    "category": "purple",
     "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "chocolat",
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
+
   {
     "name": "kouign aman",
-    "category": "orange",
-    "pieces": 8,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "producer": "tartes",
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "pavé",
-    "category": "orange",
+    "producer": "tartes",
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "kouign aman",
+    "producer": "tartes",
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "pavé",
+    "producer": "tartes",
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "kouign aman",
+    "producer": "tartes",
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "pavé",
+    "producer": "tartes",
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "kouign aman",
+    "producer": "tartes",
     "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "pavé",
+    "producer": "tartes",
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "baba",
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "baba",
+    "producer": "four",
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "baba",
+    "producer": "four",
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
+  },
+  {
+    "name": "baba",
+    "producer": "four",
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "saint honoré",
-    "category": "blue",
-    "pieces": 1,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "saint honoré",
-    "category": "blue",
-    "pieces": 4,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "saint honoré",
-    "category": "blue",
-    "pieces": 6,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "saint honoré",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair caramel",
-    "category": "blue",
-    "pieces": 1,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair caramel",
-    "category": "blue",
-    "pieces": 4,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair caramel",
-    "category": "blue",
-    "pieces": 6,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair caramel",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair chocolat",
-    "category": "blue",
-    "pieces": 1,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair chocolat",
-    "category": "blue",
-    "pieces": 4,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair chocolat",
-    "category": "blue",
-    "pieces": 6,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "eclair chocolat",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles praliné",
-    "category": "blue",
-    "pieces": 1,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles praliné",
-    "category": "blue",
-    "pieces": 4,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles praliné",
-    "category": "blue",
-    "pieces": 6,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles praliné",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles vanille",
-    "category": "blue",
-    "pieces": 1,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 1,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles vanille",
-    "category": "blue",
-    "pieces": 4,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 4,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles vanille",
-    "category": "blue",
-    "pieces": 6,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 6,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles vanille",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "gourmandise",
-    "category": "blue",
+    "producer": "four",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "gourmandise",
-    "category": "blue",
+    "producer": "four",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "gourmandise",
-    "category": "blue",
+    "producer": "four",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "gourmandise",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "miss clara",
-    "category": "blue",
+    "producer": "four",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "miss clara",
-    "category": "blue",
+    "producer": "four",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "miss clara",
-    "category": "blue",
+    "producer": "four",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "miss clara",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "paris plougastel",
-    "category": "blue",
+    "producer": "four",
     "pieces": 1,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "paris plougastel",
-    "category": "blue",
+    "producer": "four",
     "pieces": 4,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "paris plougastel",
-    "category": "blue",
+    "producer": "four",
     "pieces": 6,
-    "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   },
   {
     "name": "paris plougastel",
-    "category": "blue",
-    "pieces": 8,
     "producer": "four",
-    "created": "2017-07-13",
-    "status": "VALID"
+    "pieces": 8,
+    "startDate": "2018-02-01",
+    "endDate":"9999-12-31"
   }
 ]

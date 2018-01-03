@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ProductRepository extends PagingAndSortingRepository<Product, Long> {
+public interface ProductRepository extends PagingAndSortingRepository<Product, ProductKey> {
 
     List<Product> findByProducerOrderByName(@Param("producer") String producer);
     List<Product> findByProducerOrderByName(@Param("producer") String producer, Pageable pageable);
@@ -18,16 +18,10 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
 
     Page<Product> findAll(Pageable pageable);
 
-    void delete(Long id);
+    void delete(ProductKey key);
 
     @Query("select DISTINCT p.name from Product p")
     List<Object> listNames();
-
-    @Query("select DISTINCT p.category from Product p")
-    List<Object> listCategories();
-
-    @Query("select DISTINCT p.category, p.name from Product p")
-    List<Object[]> listCategoriesAndNames();
 
 
 }

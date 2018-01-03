@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(SpringRunner.class)
 @JsonTest
-public class ProductJsonTest {
+public class OneProductJsonTest {
 
     @Autowired
     private JacksonTester<Product> json;
@@ -39,12 +39,11 @@ public class ProductJsonTest {
     @Before
     public void setup() throws Exception{
         cake = new Product("product",
-                "category",
-                (short)1,
+                1,
                 "producer",
-                LocalDate.of(2017,7,13),
-                "RUNNING");
-        jsonFile = ResourceUtils.getFile("classpath:peakycake.json");
+                LocalDate.of(2018,2,01),
+                LocalDate.of(2019,1,01));
+        jsonFile = ResourceUtils.getFile("classpath:one_product.json");
 
     }
     @Test

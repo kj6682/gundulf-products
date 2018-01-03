@@ -56,11 +56,13 @@ class Controller {
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
-    @DeleteMapping(value = "/products/{producer}/{id}")
+    @DeleteMapping(value = "/products/{producer}/{product}/{pieces}")
     void delete(@PathVariable String producer,
-                @PathVariable(required = true) Long id) {
+                @PathVariable(required = true) String product,
+                @PathVariable(required = true) Integer pieces) {
+
         //TODO check the producer
-        repository.delete(id);
+        repository.delete(new ProductKey(product, pieces));
     }
 
     private static class ProductNotFoundException extends RuntimeException {

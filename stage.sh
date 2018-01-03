@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export PORT="-Dserver.port=9000"
-export VERSION="1.1.0"
+export VERSION="1.2.0"
 
 if [ -z "$1" ]
   then

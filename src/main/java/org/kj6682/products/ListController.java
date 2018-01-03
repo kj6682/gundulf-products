@@ -22,18 +22,6 @@ class ListController {
         }
     };
 
-    Function<Object, QueryAttributes.Category> toCategory = new Function<Object, QueryAttributes.Category>() {
-        public QueryAttributes.Category apply(Object t) {
-            return new QueryAttributes.Category(t.toString());
-        }
-    };
-
-    Function<Object[], QueryAttributes.CategoryName> toCategoryName = new Function<Object[], QueryAttributes.CategoryName>() {
-        public QueryAttributes.CategoryName apply(Object[] t) {
-            return new QueryAttributes.CategoryName(t[0].toString(), t[1].toString());
-        }
-    };
-
     @Autowired
     private ProductRepository repository;
 
@@ -50,55 +38,7 @@ class ListController {
 
     }
 
-    @GetMapping("/categories")
-    public List<QueryAttributes.Category> categories() {
-
-        List<Object> objects = repository.listCategories();
-
-        List<QueryAttributes.Category> categories = objects.stream()
-                .map(toCategory)
-                .collect(Collectors.<QueryAttributes.Category>toList());
-
-        return categories;
-
-    }
-
-    @GetMapping("/categoriesandnames")
-    public List<QueryAttributes.CategoryName> categoriesAndNames() {
-
-        List<Object[]> objects = repository.listCategoriesAndNames();
-
-        List<QueryAttributes.CategoryName> categories = objects.stream()
-                .map(toCategoryName)
-                .collect(Collectors.<QueryAttributes.CategoryName>toList());
-
-        return categories;
-
-    }
-
     static class QueryAttributes {
-        @Data
-        static class Category {
-
-            Category(String name) {
-                this.name = name;
-            }
-
-            private String name;
-
-        }
-
-        @Data
-        static class CategoryName {
-
-            private String category;
-            private String name;
-
-            public CategoryName(String category, String name) {
-                this.category = category;
-                this.name = name;
-            }
-        }
 
         @Data
         static class Name {
