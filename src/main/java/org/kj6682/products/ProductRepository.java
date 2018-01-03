@@ -29,4 +29,5 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, L
     @Query("select DISTINCT p.category, p.name from Product p")
     List<Object[]> listCategoriesAndNames();
 
+
 }
