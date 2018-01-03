@@ -55,26 +55,4 @@ public class Application {
 
     }
 
-    @Profile({"ddl-create", "h2"})
-    @Bean
-    CommandLineRunner initItems(ItemRepository itemRepository) throws IOException {
-        org.springframework.core.io.Resource resource = new ClassPathResource("items.json");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(resource.getInputStream()));
-        final String jsonArray = reader.lines().collect(Collectors.joining());
-        ObjectMapper mapper = new ObjectMapper();
-
-        Item[] asArray = mapper.readValue(jsonArray, Item[].class);
-
-        return (evt) -> {
-            Arrays.asList(asArray).forEach(
-                    cake -> {
-                        itemRepository.save(cake);
-                        System.out.println(cake);
-                    }
-            );
-
-        };
-
-    }
-    
 }
