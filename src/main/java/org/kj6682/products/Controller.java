@@ -71,12 +71,12 @@ class Controller {
     }
 
     @DeleteMapping(value = "/products/{producer}/{product}/{pieces}")
-    void delete(@PathVariable String producer,
+    void delete(@PathVariable(required = true) String producer,
                 @PathVariable(required = true) String product,
                 @PathVariable(required = true) Integer pieces) {
 
         //TODO check the producer
-        repository.delete(new ProductKey(product, pieces));
+       repository.delete(new ProductKey(product, pieces));
     }
 
     private static class ProductNotFoundException extends RuntimeException {
