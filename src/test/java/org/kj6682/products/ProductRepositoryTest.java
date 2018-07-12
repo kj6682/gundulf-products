@@ -28,11 +28,11 @@ public class ProductRepositoryTest {
     @Test
     public void insertOneProduct() {
         // given
-        Product simple = new Product("product", 1, "producer",
+        Product simple = new Product("product", "category",
                 LocalDate.of(2017, 12, 3),
                 LocalDate.of(2017, 12, 4));
         repo.save(simple);
-        Product other = repo.findOne(new ProductKey("product", 1));
+        Product other = repo.findOne(1L);
 
         // then
         assertThat(other != null);
@@ -41,12 +41,12 @@ public class ProductRepositoryTest {
     @Test
     public void updateOneProduct() {
         // given
-        Product one = new Product("product", 1, "producer",
+        Product one = new Product("product", "category",
                 LocalDate.of(2017, 12, 3),
                 LocalDate.of(2017, 12, 4));
         repo.save(one);
 
-        Product two = repo.findOne(new ProductKey("product", 1));
+        Product two = repo.findOne(1L);
         assertThat(two != null);
         assertThat(two.equals(one));
 
@@ -54,7 +54,7 @@ public class ProductRepositoryTest {
         two.setEndDate(LocalDate.MAX);
         repo.save(two);
 
-        Product three = repo.findOne(new ProductKey("product", 1));
+        Product three = repo.findOne(1L);
         assertThat(three != null);
         assertThat(!one.equals(three) );
         assertThat(three.getEndDate().equals(LocalDate.MAX));
@@ -64,20 +64,20 @@ public class ProductRepositoryTest {
     @Test
     public void deleteOneProduct() {
         // given
-        Product one = new Product("product", 1, "producer",
+        Product one = new Product("product", "category",
                 LocalDate.of(2017, 12, 3),
                 LocalDate.of(2017, 12, 4));
         repo.save(one);
 
-        Product two = repo.findOne(new ProductKey("product", 1));
+        Product two = repo.findOne(1L);
         assertThat(two != null);
         assertThat(two.equals(one));
 
         //when
-        repo.delete(new ProductKey("product", 1));
+        repo.delete(1L);
 
         //then
-        Product three = repo.findOne(new ProductKey("product", 1));
+        Product three = repo.findOne(1L);
         assertThat(three == null);
 
     }

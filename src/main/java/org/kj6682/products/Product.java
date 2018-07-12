@@ -13,16 +13,16 @@ import java.time.LocalDate;
 
 @Data
 @Entity
-@IdClass(ProductKey.class)
 class Product {
 
 
     @Id
-    private String name;
-    @Id
-    private Integer pieces;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Long id;
 
-    private String producer;
+    private String name;
+
+    private String category;
 
     @JsonSerialize(using = LocalDateSerializer.class)
     @JsonDeserialize(using = LocalDateDeserializer.class)
@@ -36,18 +36,15 @@ class Product {
     }
 
     public Product(String name,
-                   Integer pieces,
-                   String producer,
+                   String category,
                    LocalDate validityStartDate,
                    LocalDate validityEndDate) {
 
         Assert.notNull(name, "an order needs a product");
-        Assert.notNull(pieces, "an order needs a pFactor");
-        Assert.notNull(producer, "an order needs a producer");
+        Assert.notNull(category, "an order needs a category");
 
         this.name = name;
-        this.pieces = pieces;
-        this.producer = producer;
+        this.category = category;
         this.startDate = validityStartDate;
         this.endDate = validityEndDate;
 

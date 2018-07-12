@@ -1,7 +1,6 @@
 {
   "name" : "product",
-  "pieces": 1,
-  "producer": "producer",
-  "startDate" : "2018-02-01",
-  "endDate" : "2019-01-01"
+  "category": "category",
+  "startDate" : "2018-06-03",
+  "endDate" : "2019-06-03"
 }

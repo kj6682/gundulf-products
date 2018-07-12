@@ -6,6 +6,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -17,66 +18,79 @@ import static org.springframework.util.StringUtils.isEmpty;
 import static org.springframework.util.Assert.isTrue;
 import static org.springframework.util.Assert.notNull;
 
-/**
- * Created by luigi on 30/07/2017.
- */
 @Api(value = "products", description = "Products API")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/products/v2.0")
 class Controller {
 
     @Autowired
     private ProductRepository repository;
 
 
-    @GetMapping("/products/{producer}")
-    List<Product> listByProducer(@PathVariable String producer, @RequestParam(value = "page", defaultValue = "0") int page, @RequestParam(value = "size", defaultValue = "0") int size) {
-        //TODO check the producer
-        if (page == 0 && size == 0) {
-            return repository.findByProducerOrderByName(producer);
+    @GetMapping("/")
+    List<Product> findProducts(
+            @RequestParam(value = "name", defaultValue = "", required = false) String name,
+            @RequestParam(value = "category", defaultValue = "", required = false) String category) {
+
+        if (category.isEmpty() && name.isEmpty()) {
+            return repository.findAll();
         }
 
+        if (category.isEmpty()) {
+            return repository.findByNameContainingIgnoreCaseOrderByName(name);
+        }
+
+        if (name.isEmpty()) {
+            return repository.findByCategoryOrderByName(category);
+        }
+
+        return repository.findByNameContainingIgnoreCaseOrderByName(name)
+                .stream()
+                .filter(product -> product.getCategory().equals(category))
+                .collect(Collectors.toList());
+
+    }
+
+    @GetMapping("/paged")
+    List<Product> findProductPaged(
+            @RequestParam(value = "name", defaultValue = "", required = false) String name,
+            @RequestParam(value = "category", defaultValue = "", required = false) String category,
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "0") int size
+    ) {
+        isTrue(page > 0, "the page must be a positive number");
+        isTrue(size >= 0, "the size must be a strictly positive number");
+
         List<Product> list = new ArrayList<>();
-        repository.findByProducerOrderByName(producer, new PageRequest(page, size)).iterator().forEachRemaining(list::add);
+        repository.findByCategoryOrderByName(category,
+                new PageRequest(page, size))
+                .iterator()
+                .forEachRemaining(list::add);
+
         return list;
 
     }
 
-    @GetMapping("/products/{producer}/search")
-    List<Product> search(@PathVariable String producer,
-                         @RequestParam(value = "name", defaultValue = "") String name) {
-        //TODO check the producer
-        return repository.findByNameContainingIgnoreCaseOrderByName(name)
-                .stream()
-                .filter(product -> product.getProducer().equals(producer))
-                .collect(Collectors.toList());
-    }
-
-    @PostMapping(value = "/products/{producer}")
-    ResponseEntity<?> create(@PathVariable String producer,
-                             @RequestBody Product product) {
+    @PostMapping(value = "/")
+    ResponseEntity<?> create(@RequestBody Product product) {
 
         notNull(product, "Product can not be empty");
-        isTrue( !isEmpty(product.getName()), "a product needs a name");
-        notNull( product.getPieces(), "a product needs some pieces");
-        isTrue( product.getPieces() > 0, "a product must have a positive number" );
-        isTrue( !isEmpty(product.getProducer()), "an order needs a producer");
-        isTrue( product.getStartDate().isBefore(product.getEndDate()), "start date should be before end date");
+        isTrue(!isEmpty(product.getName()), "a product needs a name");
+        isTrue(product.getStartDate().isBefore(product.getEndDate()), "start date should be before end date");
 
         product.setName(product.getName().toLowerCase().trim());
-        product.setProducer(product.getProducer().toLowerCase().trim());
 
         Product result = repository.save(product);
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
-    @DeleteMapping(value = "/products/{producer}/{product}/{pieces}")
-    void delete(@PathVariable(required = true) String producer,
-                @PathVariable(required = true) String product,
-                @PathVariable(required = true) Integer pieces) {
+    @DeleteMapping(value = "/")
+    void delete(@RequestParam(required = true) Long id) {
 
-        //TODO check the producer
-       repository.delete(new ProductKey(product, pieces));
+        notNull(id,"id must be not null");
+        isTrue(id >=0, "id must be positive");
+
+        repository.delete(id);
     }
 
     private static class ProductNotFoundException extends RuntimeException {

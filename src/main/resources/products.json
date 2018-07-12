@@ -1,423 +1,79 @@
 [
   {
     "name": "moelleux praliné",
-    "pieces": 1,
-    "producer": "chocolat",
+    "category": "chocolat",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "moelleux framboise",
-    "pieces": 1,
-    "producer": "chocolat",
+    "category": "chocolat",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "moelleux choco",
-    "pieces": 1,
-    "producer": "chocolat",
+    "category": "chocolat",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "cake chocolat",
-    "pieces": 1,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux praliné",
-    "pieces": 4,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux framboise",
-    "pieces": 4,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux choco",
-    "pieces": 4,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "cake chocolat",
-    "pieces": 4,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux praliné",
-    "pieces": 6,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux framboise",
-    "pieces": 6,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux choco",
-    "pieces": 6,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "cake chocolat",
-    "pieces": 6,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux praliné",
-    "pieces": 8,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux framboise",
-    "pieces": 8,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "moelleux choco",
-    "pieces": 8,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "cake chocolat",
-    "pieces": 8,
-    "producer": "chocolat",
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-
-  {
-    "name": "kouign aman",
-    "producer": "tartes",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "pavé",
-    "producer": "tartes",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "kouign aman",
-    "producer": "tartes",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "pavé",
-    "producer": "tartes",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "kouign aman",
-    "producer": "tartes",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "pavé",
-    "producer": "tartes",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "kouign aman",
-    "producer": "tartes",
-    "pieces": 8,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "pavé",
-    "producer": "tartes",
-    "pieces": 8,
+    "category": "chocolat",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "baba",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "baba",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "baba",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "baba",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "saint honoré",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "saint honoré",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "saint honoré",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "saint honoré",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "eclair caramel",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair caramel",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair caramel",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair caramel",
-    "producer": "four",
-    "pieces": 8,
-    
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "eclair chocolat",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair chocolat",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair chocolat",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "eclair chocolat",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles praliné",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles praliné",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles praliné",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles praliné",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "millefeuilles vanille",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles vanille",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles vanille",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "millefeuilles vanille",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "gourmandise",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "gourmandise",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "gourmandise",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "gourmandise",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "miss clara",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "miss clara",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "miss clara",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "miss clara",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   },
   {
     "name": "paris plougastel",
-    "producer": "four",
-    "pieces": 1,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "paris plougastel",
-    "producer": "four",
-    "pieces": 4,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "paris plougastel",
-    "producer": "four",
-    "pieces": 6,
-    "startDate": "2018-02-01",
-    "endDate":"9999-12-31"
-  },
-  {
-    "name": "paris plougastel",
-    "producer": "four",
-    "pieces": 8,
+    "category": "four",
     "startDate": "2018-02-01",
     "endDate":"9999-12-31"
   }

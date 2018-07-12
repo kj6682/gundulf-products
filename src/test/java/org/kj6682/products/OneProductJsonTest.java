@@ -39,10 +39,9 @@ public class OneProductJsonTest {
     @Before
     public void setup() throws Exception{
         cake = new Product("product",
-                1,
-                "producer",
-                LocalDate.of(2018,2,01),
-                LocalDate.of(2019,1,01));
+                "category",
+                LocalDate.of(2018,6,03),
+                LocalDate.of(2019,6,03));
         jsonFile = ResourceUtils.getFile("classpath:one_product.json");
 
     }
